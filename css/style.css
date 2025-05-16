@@ -1,0 +1,383 @@
+Body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 50px;
+    background-color: burlywood;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: transparent;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.main-header {
+    background-color: beige;
+    color: #b88451;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul li {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #430707;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: rgb(93, 1, 1);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#introduction,
+#gallery,
+#interactive-wall,
+#contact-us,
+footer {
+    background-color: beige;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+header {
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header p {
+    color: #777;
+}
+
+#introduction {
+    text-align: center;
+    width: 100%;
+}
+
+#introduction h2 {
+    margin-bottom: 15px;
+    color: #b88451;
+}
+
+#gallery {
+    text-align: center;
+    width: 100%;
+}
+
+#gallery h2 {
+    margin-bottom: 20px;
+    color: #b88451;
+}
+
+.proverb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.proverb-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proverb-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.proverb-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.proverb-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.proverb-original {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(93, 1, 1);
+    text-align: center;
+}
+
+.proverb-translation {
+    color: #430707;
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+}
+
+.expand-button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #410303;
+    padding: 5px;
+    outline: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.expand-button.open {
+    transform: rotate(180deg);
+}
+
+.proverb-details {
+    margin-top: 10px;
+    color: peru;
+    font-size: 0.9em;
+    text-align: center;
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.proverb-details.open {
+    display: block;
+}
+
+#interactive-wall {
+    text-align: center;
+    width: 100%;
+}
+
+#interactive-wall h2 {
+    margin-bottom: 20px;
+    color: #b88451;
+}
+
+#interactive-wall form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#interactive-wall form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+#interactive-wall label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: burlywood;
+}
+
+#interactive-wall input[type="text"],
+#interactive-wall input[type="email"],
+#interactive-wall textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#interactive-wall textarea {
+    resize: vertical;
+}
+
+#interactive-wall button[type="submit"] {
+    background-color: #daa520;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#interactive-wall button[type="submit"]:hover {
+    background-color: #b8860b;
+}
+
+#interactive-wall .note {
+    color: #777;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+#contact-us {
+    text-align: center;
+    width: 100%;
+}
+
+#contact-us h2 {
+    margin-bottom: 20px;
+    color: #b88451;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #daa520;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #b8860b;
+}
+
+#contact-us .note {
+    color: #777;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.proverb-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: burlywood;
+    color: #410303;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8em;
+    width: 100%;
+    box-sizing: border-box;
+}
